@@ -1,0 +1,48 @@
+/* Author: Tushardeep Singh */
+
+.AboutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2rem;
+}
+
+.about-me {
+  padding: 2rem;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bolder;
+
+  animation: changeTextColor 4s infinite;
+}
+
+@keyframes changeTextColor {
+  0% {
+    color: #000501;
+  }
+
+  50% {
+    color: #600047;
+  }
+
+  100% {
+    color: #000501;
+  }
+}
+
+.mailMeBtn {
+  border: none;
+  font-size: 2.5rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: inherit;
+
+  animation: changeTextColor 2s infinite;
+}
+
+.mailMeBtn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}

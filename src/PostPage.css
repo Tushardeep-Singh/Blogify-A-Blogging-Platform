@@ -1,0 +1,201 @@
+/* Author: Tushardeep Singh */
+
+/* Variable declaration */
+:root {
+  --LOADING-TEXT-COLOR: red;
+  --POST-BUTTONS-BORDER-TOP: 1px solid #002500;
+  --POST-TEXT-COLOR: #53131E;
+  --POST-BODY-BORDER-TOP: 1px solid #002500;
+  --POST-BODY-PADDING: 0.5rem;
+  --POST-TITLE-PADDING: 0.5rem;
+  --BUTTON-TEXT-COLOR: white;
+  --BUTTON-BORDER-RADIUS: 0.2rem;
+  --DELETE-BUTTON-BG-COLOR: red;
+  --EDIT-BUTTON-BG-COLOR: #002500;
+  --BUTTON-HOVER-BG-COLOR: #E0DFD5;
+  --BUTTON-HOVER-TEXT-COLOR: #313638;
+  --BUTTON-HOVER-BORDER: 0.5px solid #313638;
+  --EDIT-WINDOW-BG-COLOR: #F2F4F3;
+  --EDIT-WINDOW-TEXT-COLOR: #2A3D45;
+  --EDIT-WINDOW-TEXT-AREA-BORDER-TOP: 3px solid #002500;
+  --EDIT-WINDOW-TEXT-AREA-BORDER-BOTTOM: 3px solid #002500;
+  --EDIT-WINDOW-BUTTON-HOVER-BG-COLOR: #002500;
+  --EDIT-WINDOW-BUTTON-HOVER-TEXT-COLOR: #FBF5F3;
+
+}
+
+/* Styles for post page */
+.PostPage {
+  overflow: scroll;
+  width: 80%;
+  align-self: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  color: var(--LOADING-TEXT-COLOR);
+}
+
+.posts,
+.userPosts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.post {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  font-size: xx-large;
+  font-style: italic;
+
+  border: 5px solid #002500;
+  animation: changeBGColorPost 4s infinite;
+  color: var(--POST-TEXT-COLOR);
+  font-weight: bolder;
+  line-height: 2rem;
+}
+
+.post:hover {
+  cursor: pointer;
+  animation-play-state: paused;
+  transform: scale(1.02);
+  transition: all 0.5s;
+}
+
+/* Background color change for each post */
+@keyframes changeBGColorPost {
+  0% {
+    background-color: #CFCBCA;
+  }
+
+  33% {
+    background-color: #D8DDDE;
+  }
+
+  66% {
+    background-color: #D9F7FA;
+  }
+
+  100% {
+    background-color: #CFCBCA;
+  }
+}
+
+.post-buttons {
+  border-top: var(--POST-BUTTONS-BORDER-TOP);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.post-body {
+  border-top: var(--POST-BODY-BORDER-TOP);
+  padding: var(--POST-BODY-PADDING);
+  overflow: scroll;
+}
+
+.post-title {
+  padding: var(--POST-TITLE-PADDING);
+  overflow: scroll;
+}
+
+.button {
+  border: none;
+  padding: 1rem;
+  font-size: large;
+  color: var(--BUTTON-TEXT-COLOR);
+  border-radius: var(--BUTTON-BORDER-RADIUS);
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: var(--BUTTON-HOVER-BG-COLOR);
+  color: var(--BUTTON-HOVER-TEXT-COLOR);
+  border: var(--BUTTON-HOVER-BORDER);
+  transition: all 0.5s;
+}
+
+.delete-button {
+  background-color: var(--DELETE-BUTTON-BG-COLOR);
+}
+
+.edit-button {
+  background-color: var(--EDIT-BUTTON-BG-COLOR);
+}
+
+/* Styles for edit window */
+.editWindow {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-self: center;
+  animation: borderColorChange 4s infinite;
+}
+
+@keyframes borderColorChange {
+  0% {
+    border: 10px solid #410B13;
+    border-bottom: 20px solid #410B13;
+    ;
+  }
+
+  33% {
+    border: 10px solid #BA1F33;
+    border-bottom: 20px solid #BA1F33;
+    ;
+  }
+
+  66% {
+    border: 10px solid #91171F;
+    border-bottom: 20px solid #91171F;
+
+  }
+
+  100% {
+    border: 10px solid #410B13;
+    border-bottom: 20px solid #410B13;
+  }
+}
+
+.editWindow-input,
+.editWindow-textArea,
+.editWindow-button {
+  background-color: var(--EDIT-WINDOW-BG-COLOR);
+  color: var(--EDIT-WINDOW-TEXT-COLOR);
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+  padding: 0.5rem;
+  border: none;
+}
+
+.editWindow-textArea {
+  border-top: var(--EDIT-WINDOW-TEXT-AREA-BORDER-TOP);
+  border-bottom: var(--EDIT-WINDOW-TEXT-AREA-BORDER-BOTTOM);
+}
+
+.editWindow-button:hover {
+  cursor: pointer;
+  background-color: var(--EDIT-WINDOW-BUTTON-HOVER-BG-COLOR);
+  color: var(--EDIT-WINDOW-BUTTON-HOVER-TEXT-COLOR);
+  font-size: x-large;
+  transition: all 1s;
+}
+
+.editWindow-input,
+.editWindow-textArea {
+  overflow: scroll;
+}

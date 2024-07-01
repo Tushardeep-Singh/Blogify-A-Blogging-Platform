@@ -1,0 +1,56 @@
+/* Author: Tushardeep Singh */
+
+:root {
+  --NAVBAR-LINK-PADDING: 1rem;
+  --NAVBAR-LINK-TEXT-COLOR: #FBF5F3;
+  --NAVBAR-LINK-HOME-BG-COLOR: #E4572E;
+  --NAVBAR-LINK-POST-BG-COLOR: #29335C;
+  --NAVBAR-LINK-STORIES-BG-COLOR: #F3A712;
+  --NAVBAR-LINK-ABOUT-BG-COLOR: #002500;
+  --NAVBAR-LINK-HOVER-BG-COLOR: #E0DFD5;
+  --NAVBAR-LINK-HOVER-TEXT-COLOR: #313638;
+}
+
+.navbar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-link {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  padding: var(--NAVBAR-LINK-PADDING);
+  color: var(--NAVBAR-LINK-TEXT-COLOR);
+  text-decoration: none;
+  font-size: larger;
+}
+
+/* Background color of each navbar link */
+.navbar-link-home {
+  background-color: var(--NAVBAR-LINK-HOME-BG-COLOR);
+}
+
+.navbar-link-post {
+  background-color: var(--NAVBAR-LINK-POST-BG-COLOR);
+}
+
+.navbar-link-stories {
+  background-color: var(--NAVBAR-LINK-STORIES-BG-COLOR);
+}
+
+.navbar-link-about {
+  background-color: var(--NAVBAR-LINK-ABOUT-BG-COLOR);
+}
+
+.navbar-link:hover {
+  background-color: var(--NAVBAR-LINK-HOVER-BG-COLOR);
+  color: var(--NAVBAR-LINK-HOVER-TEXT-COLOR);
+  transition: all 0.5s;
+}
+
+.disabled {
+  pointer-events: none;
+}

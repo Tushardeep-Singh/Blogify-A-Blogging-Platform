@@ -1,0 +1,44 @@
+:root {
+  --BODY-BG-COLOR: #ACB0BD;
+  --BODY-TEXT-COLOR: #0D0628;
+  --ROOT-BG-COLOR: #D9DBF1;
+  --BODY-MIN-HEIGHT: 100vh;
+  --BODY-MIN-WIDTH: 100vw;
+  --ROOT-HEIGHT: 95vh;
+  --ROOT-WIDTH: 95vw;
+  --ROOT-BORDER: 5px solid #310A31;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--BODY-BG-COLOR);
+  color: var(--BODY-TEXT-COLOR);
+  min-height: var(--BODY-MIN-HEIGHT);
+  min-width: var(--BODY-MIN-WIDTH);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.root {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--ROOT-BG-COLOR);
+  height: var(--ROOT-HEIGHT);
+  width: var(--ROOT-WIDTH);
+  border: var(--ROOT-BORDER);
+}
+
+@media only screen and (max-width: 768px) {
+  .root {
+    display: none;
+  }
+}

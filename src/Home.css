@@ -1,0 +1,93 @@
+/* Author: Tushardeep Singh */
+
+/* Variable declarations */
+:root {
+  --HOMEPAGE-TOP-SEC-TEXT-COLOR: #E4572E;
+  --TOPSECTION-LINK-BG-COLOR: #E4572E;
+  --TOPSECTION-LINK-TEXT-COLOR: #FBF5F3;
+  --TOPSECTION-LINK-HOVER-BG-COLOR: #E0DFD5;
+  --TOPSECTION-LINK-HOVER-TEXT-COLOR: #313638;
+  --DUMMY-BLOG-BORDER-TOP: 1px solid #E4572E;
+}
+
+.homePage {
+  flex-grow: 1;
+  padding: 0.5rem;
+}
+
+.homePage-topSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--HOMEPAGE-TOP-SEC-TEXT-COLOR);
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.topSection-link {
+  background-color: var(--TOPSECTION-LINK-BG-COLOR);
+  color: var(--TOPSECTION-LINK-TEXT-COLOR);
+  padding: 1rem;
+  border-radius: 0.2rem;
+}
+
+.topSection-link:hover {
+  background-color: var(--TOPSECTION-LINK-HOVER-BG-COLOR);
+  color: var(--TOPSECTION-LINK-HOVER-TEXT-COLOR);
+  transition: all 0.5s;
+}
+
+.homePage-dummyBlog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+}
+
+.dummyBlog {
+  width: 70%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  animation: borderColorChange 10s infinite;
+}
+
+/* animation to change the color of the border */
+@keyframes borderColorChange {
+  0% {
+    border: 10px solid #E4572E;
+  }
+
+  23% {
+    border: 10px solid #29335C;
+  }
+
+  56% {
+    border: 10px solid #F3A712;
+  }
+
+  79% {
+    border: 10px solid #002500;
+  }
+
+  100% {
+    border: 10px solid #E4572E;
+  }
+}
+
+.dummyBlog-input {
+  border: none;
+  font-size: larger;
+  padding: 0.5rem;
+}
+
+.dummyBlog-textArea {
+  border: none;
+  border-top: var(--DUMMY-BLOG-BORDER-TOP);
+  font-size: larger;
+  padding: 0.5rem;
+}

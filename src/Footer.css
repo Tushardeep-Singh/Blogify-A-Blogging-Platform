@@ -1,0 +1,47 @@
+/* Author: Tushardeep Singh */
+
+:root {
+  --FOOTER-TITLE-TEXT-COLOR: #210203;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  margin-top: auto;
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer-title {
+  flex-grow: 1;
+  text-align: center;
+  font-size: larger;
+  color: var(--FOOTER-TITLE-TEXT-COLOR);
+  padding: 1.5rem;
+  animation: changeFTitleBGColor 4s infinite;
+}
+
+/* Animation to change the background color of the footer */
+@keyframes changeFTitleBGColor {
+  0% {
+    background-color: #DEC5E3;
+  }
+
+  25% {
+    background-color: #CDEDFD;
+  }
+
+  50% {
+    background-color: #B6DCFE;
+  }
+
+  75% {
+    background-color: #A9F8FB;
+  }
+
+  100% {
+    background-color: #DEC5E3;
+  }
+}

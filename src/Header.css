@@ -1,0 +1,21 @@
+/* Author: Tushardeep Singh */
+
+:root {
+  --HEADER-PADDING: 0.5rem;
+  --HEADER-HOVER-BG-COLOR: #E0DFD5;
+  --HEADER-HOVER-TEXT-COLOR: #313638;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: var(--HEADER-PADDING);
+}
+
+.header:hover {
+  cursor: pointer;
+  background-color: var(--HEADER-HOVER-BG-COLOR);
+  color: var(--HEADER-HOVER-TEXT-COLOR);
+  transition: all 0.5s;
+  text-decoration: underline;
+}
