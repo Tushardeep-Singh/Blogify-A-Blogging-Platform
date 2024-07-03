@@ -26,6 +26,8 @@
   color: var(--NAVBAR-LINK-TEXT-COLOR);
   text-decoration: none;
   font-size: larger;
+  font-style: italic;
+  font-weight: bolder;
 }
 
 /* Background color of each navbar link */

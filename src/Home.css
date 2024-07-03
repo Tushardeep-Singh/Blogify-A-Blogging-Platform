@@ -8,6 +8,7 @@
   --TOPSECTION-LINK-HOVER-BG-COLOR: #E0DFD5;
   --TOPSECTION-LINK-HOVER-TEXT-COLOR: #313638;
   --DUMMY-BLOG-BORDER-TOP: 1px solid #E4572E;
+  --TOP-SECTION-HEADING-FONT-SIZE: 2.5rem;
 }
 
 .homePage {
@@ -15,19 +16,24 @@
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  justify-content: space-between;
+  height: 50%;
 }
 
 .homePage-topSection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   color: var(--HOMEPAGE-TOP-SEC-TEXT-COLOR);
   font-size: larger;
   font-weight: bolder;
   font-style: italic;
+}
+
+.homePage-topSection h3 {
+  font-size: var(--TOP-SECTION-HEADING-FONT-SIZE);
 }
 
 .topSection-link {
@@ -49,12 +55,57 @@
   align-items: center;
 }
 
+.postedBy {
+  padding: 0.5rem;
+  font-style: italic;
+  font-weight: bolder;
+  background-color: black;
+  color: whitesmoke;
+}
+
 .dummyBlog {
   width: 70%;
   height: 70%; 
   display: flex;
   flex-direction: column;
-  animation: borderColorChange 10s infinite;
+  border: 10px solid black;
+}
+
+.dummyBlog-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttons {
+  font-size: 1.5rem;
+  border: none;
+  font-style: italic;
+  font-weight: bolder;
+  flex-grow: 1;
+  padding: 1rem;
+  color: #FBF5F3;
+}
+
+.buttons:hover {
+  cursor: not-allowed;
+}
+
+.delete-button {
+  background-color: #E4572E;
+}
+
+.like-button {
+  background-color: #29335C;
+}
+
+.comment-button {
+  background-color: #F3A712;
+}
+
+.edit-button {
+  background-color: #002500;
 }
 
 /* animation to change the color of the border */

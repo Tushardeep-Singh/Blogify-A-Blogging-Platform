@@ -16,7 +16,7 @@ export const About = ({ contactEmail }) => {
           may not always excel in interviews, my strength lies in thoroughly
           reading and understanding documentation, allowing me to grasp new
           concepts. I have a strong portfolio of C++ projects and am a beginner
-          in data structures, algorithms, and the MERN stack. While I am still
+          in data structures, algorithms, and the front-end. While I am still
           growing in my expertise, I am eager to join a junior-level position
           where I can develop my skills and make valuable contributions.
         </section>
